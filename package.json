@@ -8,7 +8,8 @@
     "start": "node build",
     "watch": "tsc --watch",
     "lint": "eslint src/**",
-    "test": "jest"
+    "test": "jest",
+    "prepublish": "yarn lint && yarn test && yarn build"
   },
   "jest": {
     "moduleFileExtensions": [
